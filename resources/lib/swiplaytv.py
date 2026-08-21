@@ -38,7 +38,9 @@ CONTENT_TYPE = "videos"
 
 class SWIPlayTV(srgssr.SRGSSR):
     def __init__(self):
-        super(SWIPlayTV, self).__init__(int(sys.argv[1]), bu="swi", addon_id=ADDON_ID)
+        super(SWIPlayTV, self).__init__(
+            int(sys.argv[1]), bu="swi", addon_id=ADDON_ID
+        )
 
 
 def log(msg, level=xbmc.LOGDEBUG):
